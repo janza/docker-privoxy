@@ -1,0 +1,21 @@
+# Location of the configuration files
+confdir /etc/privoxy
+# templdir /etc/privoxy/templates
+logdir /var/log/privoxy
+
+actionsfile default.action   # Main actions file
+actionsfile user.action      # User customizations
+filterfile default.filter
+filterfile user.filter
+
+listen-address 0.0.0.0:8118
+toggle 1
+
+enable-edit-actions 1
+
+enforce-blocks 0
+
+keep-alive-timeout 5
+socket-timeout 300
+
+
